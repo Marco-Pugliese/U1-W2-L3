@@ -223,16 +223,12 @@ console.log("Robots: " + robot);
 */
 
 console.log("EXTRA --- Esercizio 9: ");
-var femaleCharactersName = [];
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender === "female")
-    femaleCharactersName.push(starWarsCharacters[i].name);
-}
+
 console.log("PRIMA : " + characters);
 for (let i = 0; i < characters.length; i++) {
   if (
-    characters[i] === femaleCharactersName[0] ||
-    characters[i] === femaleCharactersName[1]
+    characters[i] === femaleCharacters[0].name ||
+    characters[i] === femaleCharacters[1].name
   ) {
     characters.splice(i, 1);
   }
