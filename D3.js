@@ -226,12 +226,10 @@ console.log("EXTRA --- Esercizio 9: ");
 
 console.log("PRIMA : " + characters);
 for (let i = 0; i < characters.length; i++) {
-  if (
-    characters[i] === femaleCharacters[0].name ||
-    characters[i] === femaleCharacters[1].name
-  ) {
-    characters.splice(i, 1);
-  }
+  for (let y = 0; y < femaleCharacters.length; y++)
+    if (characters[i] === femaleCharacters[y].name) {
+      characters.splice(i, 1);
+    }
 }
 console.log("DOPO : " + characters);
 
